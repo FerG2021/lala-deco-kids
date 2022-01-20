@@ -1,0 +1,633 @@
+body
+    font-size: 14px !important
+    font-family: 'Roboto', sans-serif;
+    background-color: #36393e !important
+
+h2,h3,h4,h5,ul,body,html 
+    padding: 0px
+    margin: 0px
+
+.wrapper
+    min-height: 100vh //para que el contenedor abarque como minimo el 100% de la pantalla
+    overflow: hidden; //como tenemos 2 columnas con esto el contenedor de las dos sigue siendo una caja rigida  
+    // overflow-y: hidden;  
+    overflow-y: hidden; 
+    .col1   //SIDEBAR
+        float: left
+        position relative
+        z-index 999
+        width 15%
+        // agregado para el scroll ventical
+        height: 100vh
+        overflow-y: scroll;
+    .col2
+        float left
+        width 85%
+        // overflow-y: scroll;
+
+    
+
+
+.toggle-btn
+    cursor pointer
+    span
+        font-size: 26px
+        color: #fff
+
+#sidebar
+    left: -15%
+
+#sidebar.active 
+    left: 0%
+
+.mtop16
+    margin-top: 16px
+    
+.mtop20
+    margin-top: 20px
+
+.mtop10
+    margin-top: 10px
+    
+
+td
+    text-align: center
+
+.sidebar    
+    // background-color: #a32020
+    // background-color: #c9c9ff
+    background-color: #8c8cef !important
+    min-height: 100vh    
+    .section-top
+        // background-color: #a32020
+        // background-color: #c9c9ff
+        background-color: #8c8cef
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)
+    .logo
+         display: block
+         margin: 0px auto
+         padding-top: 24px
+         width: 50%
+    .user
+        color: #ffff !important
+        // color: #4e4e56 !important
+        padding: 16px
+        text-align: center
+        a 
+            // color: #ffff
+            color: #000
+            font-size: 1.2em
+    .main
+        margin-top: 8px
+        margin-bottom: 0px
+        margin-left: 0px
+        ul
+            margin-left: 0px
+            text-align: left
+            padding: 0px 0px 
+            li 
+                margin-bottom: 4px
+                margin-left: 0px
+                button
+                    color #ffff
+                    // color: #4e4e56 !important
+                    display: block
+                    font-size: 1.1em
+                    padding: 12px 3px
+                    text-decoration: none
+                    outline: none
+                    border: 0px
+                a 
+                    color #ffff
+                    // color: #4e4e56 !important
+                    display: block
+                    font-size: 1.1em
+                    padding: 12px 3px
+                    text-decoration: none
+                    i  
+                        margin-right: 10px
+                    &:hover
+                        // background-color: #602320                        
+                        background-color: #6c6cef !important                        
+                        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15)
+                        text-decoration: none
+
+
+
+
+
+
+ul{
+    list-style: none;
+    width: 100%    
+}
+
+li{
+    margin-top: 0px
+    margin-left: 0px
+}
+
+.accordion
+    border-radius: 4px !important
+    color: #fff !important
+    .accordion-item
+        // background-color: #a32020 !important
+        // background-color: #c9c9ff !important
+        background-color: #8c8cef !important
+        border: 1px solid #400000
+        border-radius: 4px !important
+        .accordion-header
+            // background-color: #a32020 !important  
+            // background-color: #c9c9ff !important
+            background-color: #8c8cef !important
+            font-weight: bold !important     
+            .accordion-button
+                // background-color: #a32020 !important
+                // background-color: #c9c9ff !important
+                background-color: #8c8cef !important
+                color: #fff !important
+                // color: #4e4e56 !important
+                &:hover
+                    // background-color: #602320  !important
+                    background-color: #6c6cef !important
+                i 
+                    margin-right: 5px 
+        .accordion-collapse
+            color: #fff
+            .accordion-body
+                margin: 0px
+                padding: 0px
+                font-weight: lighter !important
+                ul
+                    padding: 0px
+                    font-weight: lighter !important
+                    li
+                        //background: #400000
+                        margin 0px
+                        padding: 0px
+                        font-weight: lighter !important
+
+
+.accordion-button:hover
+    // background-color: #602320
+    background-color: #6c6cef !important
+
+.mletf16
+    margin-left: 20px
+
+//.collapse
+   // border 3px solid #602320
+
+//.collapse
+   // background-color: #602320
+   // margin: 0px
+
+.navbar
+    // background-color: #a32020  
+    // background-color: #c9c9ff
+    background-color: #8c8cef !important
+    .navbar-nav
+        width: 90%
+        //border: 1px solid white
+    .notification
+        width: 10%  
+        //border: 1px solid white
+        i 
+            margin-right: 20px  
+            font-size: 20px
+    a 
+        color: #fff !important
+        // color: #4e4e56 !important
+    .notification
+        text-align: right
+    
+    
+
+
+.page
+    padding-top: 16px
+    padding-bottom: 16px    
+    .breadcrumb
+        background-color: #555555
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.10) !important
+        .breadcrumb-item            
+            a 
+                color: #fff !important
+                &:hover
+                    text-decoration: none !important
+    .panel
+        background-color: #555555
+        border-radius: 6px
+        // border-bottom: 2px solid #a32020
+        border-bottom: 2px solid #8c8cef
+        width: 100%
+        .header
+            // border-bottom: 1px solid #a32020
+            border-bottom: 2px solid #8c8cef
+            h2.title
+                display: inline-block
+                color#fff
+                font-size: 1.1em
+                padding: 12px 16px
+        .inside
+            padding: 16px
+            .row
+                //border: 1px solid #a32020
+                .col
+                    .link
+                        text-decoration: none
+                        //border: 1px solid blue    
+                        content: center 
+                        text-align: center                          
+                        .card
+                            color: #fff
+                            background-color: #777777
+                            &:hover
+                                background-color:#36393e  
+                            .card-body
+                                .tile-title
+                                    padding-bottom: 3px
+                                    // border-bottom: 1px solid #a32020
+                                    border-bottom: 2px solid #8c8cef
+                                .tile-icon
+                                    font-size: 40px
+
+.inside-consult
+    padding: 10px
+    border-radius: 10px
+    background-color: #777777 
+
+
+
+
+// .tile 
+//     padding-left: 10px
+//     padding-right: 10px
+//     border-radius: 6px   
+//     margin: 10px 
+//     font-size: 16px                 
+//     margin-left: auto
+//     margin-right: auto 
+//     display inline-block
+//     //border: 1px solid white
+//     color: #fff
+//     background-color: #999999
+//     text-decoration: none
+//     &:hover
+//         background-color:#36393e 
+//     .card-body 
+//         .card-title
+//             .tile-icon                        
+//                 .icon 
+//                     font-size: 30px
+//                     padding: 10px
+
+.descriptionname
+    color: #fff !important
+
+.opts
+    a
+        border-radius: 4px
+        border: 1px solid #f0f0f0
+        display: inline-block
+        padding: 4px
+        margin-left: 10px
+
+.d-flex
+    padding: 10px
+
+
+//COMPRA
+.button
+    text-align: center
+
+
+.modal-content
+    background-color: #555555
+    .modal-header
+        background-color: #555555
+    .modal-body
+        background-color: #555555
+    
+.table > tbody > tr:hover
+    background-color: 	#333333
+
+.green
+    height:  35px
+
+.cart-market
+    border-top: 2px solid #777777
+
+.inputtext
+    height: 38px !important
+    background-color: #fff
+
+.ptext
+    width: 300px
+
+.hidden
+    display none
+
+.txt18
+    font-size: 16px
+    margin-right: 10px
+    margin-left: 10px
+
+.addproductbudget
+    color: #5cb85c
+
+#budgetTable
+    color: #fff
+    padding: 0px 
+    button
+        background-color:#df4759
+        color: #fff
+        border: 0px
+        border-radius: 3px
+        &:hover
+            background-color:#df4759
+
+.total
+    text-align: center      
+    label
+        padding-right: 10px
+    #inputTotal
+        text-align: center
+        color: #000
+
+.btn-generate
+    .btn
+        margin-right: 10px
+
+#liveAlertBtn
+    a
+        text-decoration: none
+        color: #fff
+
+
+#budgetTable
+    text-align: center
+    input 
+        text-align: center
+        background: transparent
+        border: 0px
+        color: #fff
+        font-size: 16px
+        font-weight: bold
+    #totalBudget
+        text-align: center        
+        width: 50%
+        margin: 0px
+        padding: 0px
+    #totalSale
+        text-align: center        
+        width: 50%
+        margin: 0px
+        padding: 0px
+        
+
+
+
+
+tr
+    text-align: center
+    th
+        text-align: center
+        input 
+            text-align: center
+            border: 0px
+        #totalBudget
+            background-color: #000
+            color: #fff
+            text-align: center
+
+#budgetDetailTable
+    text-align: center
+    input 
+        text-align: center
+        background: transparent
+        border: 0px
+        color: #fff
+        font-size: 16px
+        font-weight: bold
+    #totalBudget
+        text-align: center
+
+.pdf
+    background-color: #fff
+
+.display
+    color: #fff
+    th
+        background-color: #111111
+
+.display > thead
+    th
+        background-color: #000 !important
+
+.display > tfoot
+    th 
+        background-color: #000 !important
+
+// .table > tbody > tr:hover
+
+.btn-group
+    color #fff
+
+
+.table
+    thead
+        tr
+            th
+                background-color: #000 !important 
+
+    // th
+    //     background-color: #000 !important 
+
+.title-select
+    text-align: center
+
+.button-option-select
+    text-align: center
+    a
+        margin-right: 10px
+
+.btn-option-list
+    text-align: center
+    a
+        margin-right: 10px
+
+.bntaddclient
+    text-align: center
+
+#btnquitar
+    padding: 3px
+    font-size: 16px
+
+.btn-select
+    text-align: center
+
+#totalSale
+    background-color: #000
+    color: #fff
+    text-align: center
+
+.mright10
+    margin-right: 10px
+
+#totalBudget3
+    background-color: #000
+    color: #fff
+    text-align: center
+
+#totalBudget6
+    background-color: #000
+    color: #fff
+    text-align: center
+
+.mright5
+    margin-right: 5px
+
+.mright10
+    margin-right: 10px
+
+.mright20
+    margin-right: 20px
+
+.mleft10
+    margin-left: 70px
+
+.navbar-items
+    ul
+        li
+            width: 50%
+            text-align: right 
+
+.navbar-ul
+    ul 
+        background-color: #a32020
+        li
+            width: 100% !important
+            text-align: left  !important
+            a
+                &:hover
+                    background-color: #602320
+
+
+.toast-body
+    text-align: center
+
+.foot
+    background-color: #8c8cef
+    padding: 0px
+    margin: 0px
+    text-align: center
+    color: #fff
+
+.btn-list-edit
+    border-radius: 50%
+    background-color: #1b85b8
+    border: #1b85b8
+
+.btn-list-delete
+    border-radius: 50%
+    background-color: #da635d
+    border: #da635d
+
+.btn-list-success
+    border-radius: 50%
+    background-color: #289b73
+    border: #289b73
+    
+
+.btn-list-warning   
+    border-radius: 50%
+    background-color: #ffc97f
+    border: #ffc97f
+
+.btn-list-pdf-table
+    background-color: #da635d
+    border: #da635d
+
+.btn-list-excel-table
+    background-color:   #559e83
+    border: #559e83
+
+.typesale
+    text-align: center
+    .typesale-btn
+        .btn-typesale
+            margin-right: 10px
+            color: #fff        
+            background-color: #8c8cef
+            &:hover
+                background-color: #6c6cef
+
+.toast
+    .toast-header
+        background-color: #da635d
+        border: #da635d
+        .me-auto
+            color: #000
+    .toast-body
+        background-color: #da635d
+        border: #da635d
+
+.add-product
+    border-bottom: 2px solid #6c6cef
+
+.mbottom10
+    margin-bottom: 10px
+
+.searchinput
+    padding-bottom: 10px
+    border-bottom: 2px dotted #6c6cef
+
+
+.add-client
+    text-align: center
+    .btn-purple
+        color: #fff        
+        background-color: #8c8cef
+        &:hover
+            background-color: #6c6cef
+            color: #fff  
+
+.warning
+    color: #f6a200
+
+.edit
+    background-color: #1b85b8
+    border: #1b85b8
+
+.delete
+    background-color: #da635d
+    border: #da635d
+
+.success
+    background-color:   #559e83
+    border: #559e83
+
+.button-back
+    margin-top: 10px
+    margin-left: 16px
+
+#btninput
+    background-color: #000 !important
+    border: none
+    cursor default
+
+#total
+    color: #000
+    cursor: default
+
+.consult-stock
+    button
+        color: #fff        
+        background-color: #8c8cef
+        border: #8c8cef
+        &:hover
+            background-color: #6c6cef
+            color: #fff
+
+
