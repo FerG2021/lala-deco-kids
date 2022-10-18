@@ -23,7 +23,7 @@ class CreateSaleProductsTable extends Migration
             $table->decimal('priceProductSale', 8, 2);
             $table->decimal('priceProductTrust', 8, 2);
             $table->decimal('subtotal', 8, 2);
-            $table->softDeletes();  
+            $table->Softdeletes();  
             $table->timestamps();
         });
     }

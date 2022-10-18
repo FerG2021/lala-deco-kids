@@ -25,7 +25,7 @@ class CreateCurrentAccountDetailsTable extends Migration
             $table->integer('typemovement');
             $table->decimal('pay', 8, 2);
             $table->decimal('sale', 8, 2);
-            $table->softDeletes(); 
+            $table->Softdeletes(); 
             $table->timestamps();
         });
     }

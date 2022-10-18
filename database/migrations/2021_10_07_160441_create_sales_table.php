@@ -21,7 +21,7 @@ class CreateSalesTable extends Migration
             $table->string('nameBuyer');
             $table->date('dateSale');
             $table->decimal('totalPrice', 8, 2);
-            $table->softDeletes();
+            $table->Softdeletes();
             $table->timestamps();
         });
     }
