@@ -22,7 +22,7 @@ class CreateProductsTable extends Migration
             $table->decimal('priceTrustProduct', 8, 2);
             $table->integer('cantStockProduct');
             $table->integer('cantStockMinProduct');
-            $table->Softdeletes();
+            $table->SoftDeletes();
             $table->timestamps();
         });
     }

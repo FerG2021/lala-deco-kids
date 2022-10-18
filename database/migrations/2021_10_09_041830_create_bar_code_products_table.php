@@ -17,7 +17,7 @@ class CreateBarCodeProductsTable extends Migration
             $table->id();
             $table->string('barcodeBarCodeProduct');
             $table->string('nameBarCodeProduct');
-            $table->Softdeletes();
+            $table->SoftDeletes();
             $table->timestamps();
         });
     }

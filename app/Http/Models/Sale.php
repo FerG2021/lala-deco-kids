@@ -4,13 +4,13 @@ namespace App\Http\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Softdeletes;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Sale extends Model
 {
     use HasFactory;    
 
-    use Softdeletes;
+    use SoftDeletes;
 
     //protected $dates = ['delete_at'];
     protected $table = 'sales';

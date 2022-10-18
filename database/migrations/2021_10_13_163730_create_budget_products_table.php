@@ -21,7 +21,7 @@ class CreateBudgetProductsTable extends Migration
             $table->integer('cantProduct');
             $table->decimal('priceProduct', 8, 2);
             $table->decimal('subtotal', 8, 2);   
-            $table->Softdeletes();   
+            $table->SoftDeletes();   
             $table->timestamps();
         });
     }

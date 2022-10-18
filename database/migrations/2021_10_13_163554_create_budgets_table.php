@@ -19,7 +19,7 @@ class CreateBudgetsTable extends Migration
             $table->date('date');
             $table->string('nameSeller');
             $table->decimal('totalPrice', 8, 2);
-            $table->Softdeletes(); 
+            $table->SoftDeletes(); 
             $table->timestamps();
         });
     }

@@ -21,7 +21,7 @@ class CreateClientsTable extends Migration
             $table->string('directionClient');
             $table->string('phoneClient');
             $table->string('mailClient');
-            $table->Softdeletes();
+            $table->SoftDeletes();
             $table->timestamps();
         });
     }

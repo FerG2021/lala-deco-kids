@@ -23,7 +23,7 @@ class CreateCurrentAccountsTable extends Migration
             $table->decimal('balance', 8, 2);
             $table->date('datelastaction');
             $table->integer('deudors')->nullable();
-            $table->Softdeletes(); 
+            $table->SoftDeletes(); 
             $table->timestamps();
         });
     }
